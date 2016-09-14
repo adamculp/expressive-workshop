@@ -13,37 +13,4 @@ return [
             App\Action\UserDbalListAction::class => App\Action\UserDbalListFactory::class,
         ],
     ],
-
-    'routes' => [
-        [
-            'name' => 'home',
-            'path' => '/',
-            'middleware' => App\Action\HomePageAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-        [
-            'name' => 'api.ping',
-            'path' => '/api/ping',
-            'middleware' => App\Action\PingAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-        [
-            'name' => 'page',
-            'path' => '/page/[{action}]',
-            'middleware' => App\Action\PageAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-        [
-            'name' => 'user.list',
-            'path' => '/users',
-            'middleware' => App\Action\UserListAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-        [
-            'name' => 'user.dbal.list',
-            'path' => '/users/dbal',
-            'middleware' => App\Action\UserDbalListAction::class,
-            'allowed_methods' => ['GET'],
-        ],
-    ],
 ];
