@@ -1,7 +1,7 @@
 <?php
 
 $provider = new Zend\Db\ConfigProvider();
-return $provider();
+return $provider;
 
 /* Basically provides this */
 
